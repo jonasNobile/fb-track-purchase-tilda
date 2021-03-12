@@ -1,7 +1,7 @@
 import { storeTotal } from "./utils/storeTotal";
 
 const succesfullPaymentUrl = document.currentScript.getAttribute(
-  "succesfull-payment-url"
+  "successful-payment-url"
 );
 const currency = document.currentScript.getAttribute("currency") || "USD";
 
