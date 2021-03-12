@@ -1,0 +1,344 @@
+<html>
+  <head>
+    <script
+      src="../dist/fb-track-purchase-tilda.umd.js"
+      succesfull-payment-url="dokonceni-objednavky"
+      currency="CZK"
+    ></script>
+  </head>
+  <body>
+    <div class="t706__orderform">
+      <form
+        id="form252743301"
+        name="form252743301"
+        role="form"
+        action=""
+        method="POST"
+        data-formactiontype="2"
+        data-inputbox=".t-input-group"
+        class="t-form js-form-proccess t-form_inputs-total_4"
+        data-formsended-callback="t706_onSuccessCallback"
+        data-formcart="y"
+      >
+        <input
+          type="hidden"
+          name="formservices[]"
+          value="10ba6f0e4555e4872047f42bcc5a28be"
+          class="js-formaction-services"
+        />
+        <input
+          type="hidden"
+          name="formservices[]"
+          value="48f14a3ca8a8f849767f885063268833"
+          class="js-formaction-services"
+        />
+        <input
+          type="hidden"
+          name="tildaspec-formname"
+          tabindex="-1"
+          value="Cart"
+        />
+        <div
+          class="js-successbox t-form__successbox t-text t-text_md"
+          style="display: none"
+        ></div>
+        <div class="t-form__inputsbox">
+          <div
+            class="t-input-group t-input-group_nm"
+            data-input-lid="1496239431201"
+          >
+            <div
+              class="t-input-title t-descr t-descr_md"
+              data-redactor-toolbar="no"
+              field="li_title__1496239431201"
+              style=""
+            >
+              Vaše jméno a příjmení
+            </div>
+            <div class="t-input-block">
+              <input
+                type="text"
+                name="Name"
+                class="t-input js-tilda-rule"
+                value=""
+                data-tilda-req="1"
+                data-tilda-rule="name"
+                style="color: #000000; border: 1px solid #000000"
+              />
+              <div class="t-input-error"></div>
+            </div>
+          </div>
+          <div
+            class="t-input-group t-input-group_em"
+            data-input-lid="1496239459190"
+          >
+            <div
+              class="t-input-title t-descr t-descr_md"
+              data-redactor-toolbar="no"
+              field="li_title__1496239459190"
+              style=""
+            >
+              Váš Email
+            </div>
+            <div class="t-input-block">
+              <input
+                type="text"
+                name="Email"
+                class="t-input js-tilda-rule"
+                value=""
+                data-tilda-req="1"
+                data-tilda-rule="email"
+                style="color: #000000; border: 1px solid #000000"
+              />
+              <div class="t-input-error"></div>
+            </div>
+          </div>
+          <div
+            class="t-input-group t-input-group_dl"
+            data-input-lid="1605971569628"
+          >
+            <div
+              class="t-input-title t-descr t-descr_md"
+              data-redactor-toolbar="no"
+              field="li_title__1605971569628"
+              style=""
+            >
+              Doručení
+            </div>
+            <div class="t-input-block">
+              <div
+                class="t-radio__wrapper t-radio__wrapper-delivery"
+                data-delivery-variants-hook="y"
+              >
+                <label class="t-radio__control t-text t-text_xs" style=""
+                  ><input
+                    type="radio"
+                    name="Doruen"
+                    value="Osobní vyzvednutí (po dohodě)"
+                    class="t-radio t-radio_delivery js-tilda-rule"
+                    data-tilda-req="1"
+                    data-delivery-price=""
+                  />
+                  <div class="t-radio__indicator"></div>
+                  Osobní vyzvednutí (po dohodě)</label
+                >
+                <label class="t-radio__control t-text t-text_xs" style=""
+                  ><input
+                    type="radio"
+                    name="Doruen"
+                    value="Zásilkovna 65 Kč = 65"
+                    class="t-radio t-radio_delivery js-tilda-rule"
+                    data-tilda-req="1"
+                    data-delivery-price=" 65"
+                  />
+                  <div class="t-radio__indicator"></div>
+                  Zásilkovna 65 Kč
+                </label>
+              </div>
+              <div class="t-input-error"></div>
+            </div>
+          </div>
+          <div class="t-input-group t-input-group_pm" style="margin: 40px 0">
+            <div class="t-input-title t-descr t-descr_md" style="">
+              Payment method
+            </div>
+            <div class="t-input-block">
+              <div
+                class="t-radio__wrapper t-radio__wrapper-payment"
+                data-tilda-payment-variants-hook="y"
+              >
+                <label class="t-radio__control t-text t-text_xs" style=""
+                  ><input
+                    type="radio"
+                    name="paymentsystem"
+                    value="stripe"
+                    checked="checked"
+                    class="t-radio t-radio_payment"
+                    data-payment-variant-system="stripe"
+                  />
+                  <div class="t-radio__indicator"></div>
+                  Platba kartou
+                </label>
+                <label class="t-radio__control t-text t-text_xs" style=""
+                  ><input
+                    type="radio"
+                    name="paymentsystem"
+                    value="banktransfer"
+                    class="t-radio t-radio_payment"
+                    data-payment-variant-system="banktransfer"
+                  />
+                  <div class="t-radio__indicator"></div>
+                  Platba fakturou
+                </label>
+              </div>
+            </div>
+          </div>
+          <!--[if IE 8
+            ]><style>
+              .t-checkbox__control .t-checkbox,
+              .t-radio__control .t-radio {
+                left: 0px;
+                z-index: 1;
+                opacity: 1;
+              }
+              .t-checkbox__indicator,
+              .t-radio__indicator {
+                display: none;
+              }
+              .t-img-select__control .t-img-select {
+                position: static;
+              }
+            </style><!
+          [endif]-->
+          <div
+            class="t706__cartwin-totalamount-wrap t-descr t-descr_xl"
+            style="display: block"
+          >
+            <div
+              class="t706__cartwin-totalamount-info"
+              style="
+                margin-top: 10px;
+                font-size: 14px;
+                font-weight: 400;
+                display: block;
+              "
+            >
+              <span class="t706__cartwin-totalamount-info_label">Subtotal:</span
+              ><span class="t706__cartwin-totalamount-info_value"
+                >1 320&nbsp;Kč</span
+              ><br />
+            </div>
+            <span class="t706__cartwin-totalamount-label">Total:&nbsp;</span
+            ><span class="t706__cartwin-totalamount">1 320&nbsp;Kč</span>
+          </div>
+          <div class="t-form__errorbox-middle">
+            <div
+              class="js-errorbox-all t-form__errorbox-wrapper"
+              style="display: none"
+            >
+              <div class="t-form__errorbox-text t-text t-text_md">
+                <p
+                  class="t-form__errorbox-item js-rule-error js-rule-error-all"
+                  style="display: none"
+                ></p>
+                <p
+                  class="t-form__errorbox-item js-rule-error js-rule-error-req"
+                  style="display: none"
+                ></p>
+                <p
+                  class="t-form__errorbox-item js-rule-error js-rule-error-email"
+                  style="display: none"
+                ></p>
+                <p
+                  class="t-form__errorbox-item js-rule-error js-rule-error-name"
+                  style="display: none"
+                ></p>
+                <p
+                  class="t-form__errorbox-item js-rule-error js-rule-error-phone"
+                  style="display: none"
+                ></p>
+                <p
+                  class="t-form__errorbox-item js-rule-error js-rule-error-minlength"
+                  style="display: none"
+                ></p>
+                <p
+                  class="t-form__errorbox-item js-rule-error js-rule-error-string"
+                  style="display: none"
+                ></p>
+              </div>
+            </div>
+          </div>
+          <div class="t-form__submit">
+            <button
+              type="submit"
+              class="t-submit"
+              style="color: #ffffff; background-color: #000000"
+            >
+              Objednat
+            </button>
+          </div>
+        </div>
+        <div class="t-form__errorbox-bottom">
+          <div
+            class="js-errorbox-all t-form__errorbox-wrapper"
+            style="display: none"
+          >
+            <div class="t-form__errorbox-text t-text t-text_md">
+              <p
+                class="t-form__errorbox-item js-rule-error js-rule-error-all"
+                style="display: none"
+              ></p>
+              <p
+                class="t-form__errorbox-item js-rule-error js-rule-error-req"
+                style="display: none"
+              ></p>
+              <p
+                class="t-form__errorbox-item js-rule-error js-rule-error-email"
+                style="display: none"
+              ></p>
+              <p
+                class="t-form__errorbox-item js-rule-error js-rule-error-name"
+                style="display: none"
+              ></p>
+              <p
+                class="t-form__errorbox-item js-rule-error js-rule-error-phone"
+                style="display: none"
+              ></p>
+              <p
+                class="t-form__errorbox-item js-rule-error js-rule-error-minlength"
+                style="display: none"
+              ></p>
+              <p
+                class="t-form__errorbox-item js-rule-error js-rule-error-string"
+                style="display: none"
+              ></p>
+            </div>
+          </div>
+        </div>
+        <div style="position: absolute; left: -5000px; bottom: 0">
+          <input
+            type="text"
+            name="form-spec-comments"
+            value="Its good"
+            class="js-form-spec-comments"
+            tabindex="-1"
+          />
+        </div>
+      </form>
+      <style>
+        #rec252743301 input::-webkit-input-placeholder {
+          color: #000000;
+          opacity: 0.5;
+        }
+        #rec252743301 input::-moz-placeholder {
+          color: #000000;
+          opacity: 0.5;
+        }
+        #rec252743301 input:-moz-placeholder {
+          color: #000000;
+          opacity: 0.5;
+        }
+        #rec252743301 input:-ms-input-placeholder {
+          color: #000000;
+          opacity: 0.5;
+        }
+        #rec252743301 textarea::-webkit-input-placeholder {
+          color: #000000;
+          opacity: 0.5;
+        }
+        #rec252743301 textarea::-moz-placeholder {
+          color: #000000;
+          opacity: 0.5;
+        }
+        #rec252743301 textarea:-moz-placeholder {
+          color: #000000;
+          opacity: 0.5;
+        }
+        #rec252743301 textarea:-ms-input-placeholder {
+          color: #000000;
+          opacity: 0.5;
+        }
+      </style>
+    </div>
+  </body>
+</html>
