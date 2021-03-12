@@ -3,9 +3,8 @@
   factory();
 }((function () { 'use strict';
 
-  function storeTotal(totalAmount) {
-    const totalAmountNumber = parseInt(totalAmount.replace(' ', ''));
-    localStorage.setItem('ftpt:totalAmount', totalAmountNumber);
+  function storeTotal() {
+    localStorage.setItem('ftpt:totalAmount', localStorage.getItem('tcart').amount);
   }
 
   (function () {
@@ -15,26 +14,16 @@
     const currency = document.currentScript.getAttribute("currency") || "USD";
 
     window.onload = () => {
-      const orderForm = document.querySelector('[class*="orderform"] form');
+      const orderForm = document.querySelector('[data-formcart] form');
 
       if (orderForm) {
-        orderForm.addEventListener(
-          "submit",
-          () => {
-            console.log(orderForm);
-            const totalAmount = orderForm.querySelector('.t706__cartwin-totalamount')
-              .innerText;
-            console.log(totalAmount);
-            storeTotal(totalAmount);
-          },
-          false
-        );
+        orderForm.addEventListener("submit", () => storeTotal(), false);
       }
 
       if (location.pathname.includes(succesfullPaymentUrl)) {
-        const totalAmount = +localStorage.getItem("ftpt:totalAmount");
+        const totalAmount = localStorage.getItem("ftpt:totalAmount");
 
-        if (typeof fbq === 'undefined') return;
+        if (typeof fbq === "undefined") return;
         fbq("track", "Purchase", {
           value: totalAmount,
           currency: "CZK",
