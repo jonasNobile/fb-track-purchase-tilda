@@ -1,3 +1,4 @@
-export function storeTotal() {
-  localStorage.setItem('ftpt:totalAmount', localStorage.getItem('tcart').amount);
+export function storeTotal(total) {
+  console.log(total);
+  localStorage.setItem('ftpt:totalAmount', total);
 }
