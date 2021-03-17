@@ -4,21 +4,18 @@
 }((function () { 'use strict';
 
   function storeTotal(total) {
-    console.log(total);
     localStorage.setItem('ftpt:totalAmount', total);
   }
 
   const successfulPaymentUrl = document.currentScript.getAttribute("successful-payment-url");
   const currency = document.currentScript.getAttribute("currency") || "USD";
   document.addEventListener("DOMContentLoaded", () => {
-    const orderForm = document.querySelector("form[data-formcart]");
+    const orderFormSubmit = document.querySelector("form[data-formcart] [type='submit']");
 
-    if (orderForm) {
-      orderForm.addEventListener("submit", e => {
-        e.preventDefault();
+    if (orderFormSubmit) {
+      orderFormSubmit.addEventListener("click", () => {
         const totalAmount = localStorage.getItem("tcart");
         storeTotal(JSON.parse(totalAmount).amount);
-        orderForm.submit();
       }, false);
     }
 
